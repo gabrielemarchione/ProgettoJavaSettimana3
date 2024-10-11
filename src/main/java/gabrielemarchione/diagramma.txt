@@ -1,0 +1,11 @@
+Entità Principali:
+
+Item, uno a molti con loan: un elemento può essere preso in prestito in diversi prestiti,è una superclasse astratta e viene estesa da book e magazine
+Book, estende item ereditando i suoi attributi
+Magazine, estende Item ereditando i suoi attributi
+User, uno a molti con loan,un utente può avere più prestiti
+Loan: molti a uno con item e user, un prestito riguarda un solo elemento ed è fatto da un solo user       
+Item a loan: uno a molti: un elemento può essere associato a molti prestiti
+User a Loan: uno a molti: un utente può fare più prestiti
+Item è la superclasse da cui derivano Book e Magazine. Entrambe le entità ereditano gli attributi comuni e aggiungono i propri attributi specifici
+ 
